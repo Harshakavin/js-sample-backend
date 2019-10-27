@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const CourseModel_1 = require("../models/CourseModel");
 const CourseServices_1 = require("../services/CourseServices");
 const Logger_1 = require("../util/Logger");
-class CourseController {
+class CourseCtrl {
     constructor() {
         this.courseService = new CourseServices_1.CourseService();
         this.logger = new Logger_1.Logger();
@@ -44,4 +44,4 @@ class CourseController {
         };
     }
 }
-exports.CourseController = CourseController;
+exports.CourseCtrl = CourseCtrl;

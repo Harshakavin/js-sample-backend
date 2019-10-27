@@ -10,7 +10,7 @@ function setRoutes(app) {
     const router = express.Router();
     const routeOut = express.Router();
     const logger = new Logger_1.Logger();
-    const courseCtrl = new CourseCtrl_1.CourseController();
+    const courseCtrl = new CourseCtrl_1.CourseCtrl();
     const userCtrl = new UsersCtrl_1.UserCtrl();
     const Config = new config_1.default();
     // auth
@@ -25,7 +25,7 @@ function setRoutes(app) {
     router.route("/checkuserphone/:phone").get(userCtrl.checkMobile);
     // course 
     router.route("/course").post(courseCtrl.addCourse);
-    router.route("/courses").get(courseCtrl.addCourse);
+    router.route("/courses").get(courseCtrl.getCourses);
     //router.route("/courses/:coursesId").get(courseCtrl.); etc..
 }
 exports.default = setRoutes;

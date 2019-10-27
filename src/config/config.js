@@ -13,7 +13,7 @@ class dotConfig {
         return dotConfig.instance;
     }
     get SECRET_KEY() {
-        return this.SECRET_KEY;
+        return this._SECRET_KEY;
     }
 }
 exports.default = dotConfig;

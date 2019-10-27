@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const request = require('supertest');
-const server_1 = require("../server");
+const server_1 = require("./../server");
 describe("GET /api", () => {
     it("should return 200 OK", () => {
         return request(server_1.default).get("/api")
@@ -13,7 +13,7 @@ describe("POST /login", () => {
         request(server_1.default).post("/api/login")
             .field("username", "John Doe")
             .field("password", "john@me.com")
-            .end(res => {
+            .end((res) => {
             expect(res.error);
             done();
         })

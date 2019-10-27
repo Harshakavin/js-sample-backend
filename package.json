@@ -5,18 +5,17 @@
   "main": "server.js",
   "scripts": {
     "test": "jest || exit 0",
-    "start": "node ./dist/server.js",
-    "start:watch": "nodemon ./dist/*.js",
+    "start": "node ./src/server.js",
+    "start:watch": "nodemon ./src/*.js",
     "build": "npm run build-ts",
-    "build-ts": "tsc",
-    "postinstall": "npm run build"
+    "build-ts": "tsc"
   },
   "author": "Harsha kavinda",
   "license": "ISC",
   "dependencies": {
     "@angular-devkit/core": "^7.2.1",
     "@types/express": "^4.17.1",
-    "@types/mongoose": "^5.5.23",
+    "@types/mongoose": "^4.7.30",
     "@types/node-fetch": "^2.1.4",
     "@types/request": "^2.48.3",
     "@types/supertest": "^2.0.8",
@@ -29,7 +28,7 @@
     "express-fileupload": "^0.4.0",
     "express-rate-limit": "^2.14.2",
     "jsonwebtoken": "^8.3.0",
-    "mongoose": "^5.7.7",
+    "mongoose": "^5.2.8",
     "mongoose-auto-increment": "^5.0.1",
     "mongoose-easy-auto-increment": "^1.0.1",
     "request": "^2.88.0",
