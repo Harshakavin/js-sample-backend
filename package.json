@@ -27,7 +27,7 @@
     "express": "^4.16.4",
     "express-fileupload": "^0.4.0",
     "express-rate-limit": "^2.14.2",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.2.8",
     "mongoose-auto-increment": "^5.0.1",
     "mongoose-easy-auto-increment": "^1.0.1",
